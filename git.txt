@@ -1,0 +1,190 @@
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ git init
+Initialized empty Git repository in C:/Users/Vinod Kumar/eclipse-workspace/InterviewQustions/.git/
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (master)
+$ git add -A
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (master)
+$ git commit -m "First commit"
+[master (root-commit) b018503] First commit
+ 5 files changed, 53 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .gitignore
+ create mode 100644 .project
+ create mode 100644 src/StaticAndNonStatic.java
+ create mode 100644 src/qustiona/vinod.java
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (master)
+$ git remote add origin https://github.com/vinodkumark229/interivew.git
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/vinodkumark229/interivew.git'
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (master)
+$ git branch -M main
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 1.10 KiB | 281.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/vinodkumark229/interivew.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (main)
+$
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/qustiona/vinod.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (main)
+$ git add -A
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (main)
+$ git commit -m "second commit"
+[main 25b1a6f] second commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 485 bytes | 485.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/vinodkumark229/interivew.git
+   b018503..25b1a6f  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (main)
+$ git branch alpha
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (main)
+$ git checkout alpha
+Switched to branch 'alpha'
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ git branch
+* alpha
+  main
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ git status
+On branch alpha
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/qustiona/GitStudy.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ git add -A
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ git commit -m "update 3"
+[alpha 966a460] update 3
+ 1 file changed, 14 insertions(+)
+ create mode 100644 src/qustiona/GitStudy.java
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ git push -u origin aplha
+error: src refspec aplha does not match any
+error: failed to push some refs to 'https://github.com/vinodkumark229/interivew.git'
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ git push -u origin aplha
+error: src refspec aplha does not match any
+error: failed to push some refs to 'https://github.com/vinodkumark229/interivew.git'
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ git push -u alpha
+fatal: 'alpha' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ git push -u interivew
+fatal: 'interivew' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ gitpush -u origin alpha
+bash: gitpush: command not found
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ git push -u alpha
+fatal: 'alpha' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ git push remote -u$ git add -A
+
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (main)
+$ git commit -m "second commit"
+fatal: 'remote' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (main)
+bash: syntax error near unexpected token `('
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ $ git add -A
+bash: $: command not found
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (main)
+bash: syntax error near unexpected token `('
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$ $ git commit -m "second commit"
+bash: $: command not found
+
+Vinod Kumar@DESKTOP-FFTQ1QM MINGW64 ~/eclipse-workspace/InterviewQustions (alpha)
+$
